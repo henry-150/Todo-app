@@ -26,4 +26,3 @@ Fully responsive and deployable on **GitHub Pages** 🚀
 ---
 
 ## 🧩 Folder Structure
-
