@@ -10,7 +10,7 @@ import { FaSave } from "react-icons/fa";
 function App() {
 
   const [todo, setTodo] = useState("")
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')) || [])
   const [errorMessage, setErrorMessage] = useState("")
   const [showFinished, setShowFinished] = useState(true)
 
