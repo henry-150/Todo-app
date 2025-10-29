@@ -16,8 +16,10 @@ function App() {
 
   useEffect(() => {
     let todoString = localStorage.getItem("todos")
-    let todos = JSON.parse(localStorage.getItem("todos"))
-    setTodos(todos)
+    if (todoString) { 
+      let todos = JSON.parse(localStorage.getItem("todos"))
+      setTodos(todos)
+    }
   }, [])
 
   const saveToLS = () => {
